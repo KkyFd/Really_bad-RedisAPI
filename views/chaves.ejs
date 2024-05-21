@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%-include("par/key_head.ejs")%>
+    </head>
+    <body>
+        <%-include("par/logo.ejs")%>
+        <h1><%=mensagem%></h1><br>
+        <ul id="inserir-buscar">
+            <div id ="inserir">
+                <li><a href="/chaves/inserir_chave"><img src="inserir.webp"></a></li>
+            </div>
+            <div id ="buscar">
+                <li><a href="/chaves/buscar_chave"><img src="buscar.webp"></a></li>
+            </div>
+        </ul>
+        <%-include("par/voltar.ejs")%>
+    </body>
+</html>

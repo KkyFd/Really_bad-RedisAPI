@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%-include("par/conjuntos_head.ejs")%>
+    </head>
+    <body>
+        <%-include("par/logo.ejs")%>
+        <h1><%=mensagem_acao%></h1>
+        <p><%=mensagem_instrucao%></p>
+        <form method="GET" action="/hashes/buscar_hash/valor_hash">
+            <label for="id"></label><br>
+            <input type="number" id="id" name ="id" placeholder="Id do Jogador" required>
+            <input type="submit" value="OK">
+        </form>
+        <%-include("par/voltar.ejs")%>
+    </body>
+</html>

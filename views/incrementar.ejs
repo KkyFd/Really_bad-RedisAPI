@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%-include("par/conjuntos_head.ejs")%>
+    </head>
+    <body>
+        <%- include ("par/logo.ejs") %>
+        <h1><%=mensagem_acao%></h1>
+        <form method="Post" action="/sorted_sets/incrementar/incremento">
+            <label for="id"></label>
+            <input type="number" id="id" name="id" placeholder="ID">
+            <label for="incremento"></label>
+            <input type="number" id="incremento" name="incremento" placeholder="Incremento">
+            <select id="rank" name="rank"><br>
+                <option value="xp">XP</option>
+                <option value="nivel">Level</option>
+            </select>
+            <input type="submit" value="OK">
+            <br><br><br><br>
+        </form>
+    </body>
+    <%-include ("par/voltar.ejs")%>
+</html>

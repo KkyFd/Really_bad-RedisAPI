@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exemplos</title>
+        <link rel="icon" href="/redis_logo.webp">
+        <link type="text/css" rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <%-include("par/logo.ejs") %>
+        <h1><%=mensagem%></h1><br>
+        <ul id="escolhas">
+            <div class ="escolha">
+                <li><a href="/chaves"><img src="/chaves.webp" alt="imagem de chave"></a></li><br>
+            </div>
+            <div class ="escolha">
+                <li><a href="/hashes"><img src="/jogador.webp" alt="imagem de personagem de jogo RPG"></a></li><br>
+            </div>
+            <div class ="escolha">
+                <li><a href="/sorted_sets"><img src="/sorted_sets.webp" alt="imagem de pódio"></a></li><br>
+            </div>
+        </ul>
+    </body>
+</html>

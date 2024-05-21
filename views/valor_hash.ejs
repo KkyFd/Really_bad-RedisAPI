@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%-include("par/hash_head.ejs")%>
+    </head>
+    <body>
+        <%-include("par/logo.ejs")%>
+        <%if (valor != null){%>
+        <h1><%=mensagem_perfil%></h1>
+        <table>
+            <%for(let i = 0; i < limite; i++){%>
+                <%if(i == 0){%>
+                        <tr>
+                            <td class ="TableK">Nome</td>
+                            <td class ="TableV"><%=valor[i]%></td>
+                        </tr>
+                <%}else if(i == 1){%>
+                        <tr>
+                            <td class ="TableK">Raça</td>
+                            <td class ="TableV"><%=valor[i]%></td>
+                        </tr>   
+                <%}else if(i == 2){%> 
+                        <tr>
+                            <td class ="TableK">Nivel</td>
+                            <td class ="TableV"><%=valor[i]%></td>
+                        </tr>   
+                <%}else if(i == 3){%>
+                        <tr>
+                            <td class ="TableK">Vida</td>
+                            <td class ="TableV"><%=valor[i]%></td>
+                        </tr>
+                <%}else if(i== 4){%>
+                        <tr>
+                            <td class ="TableK">XP</td>
+                            <td class ="TableV"><%=valor[i]%></td>
+                        </tr>
+                <%}%>
+            <%}%>
+        </table><br>
+        <h1><%=mensagem_fim%></h1>
+        <%}else{%>
+        <h1><%=mensagem_erro%></h1>
+        <%}%>
+        <%-include ("par/voltar_inicio.ejs")%>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%-include("par/hash_head.ejs")%>
+    </head>
+    <body>
+        <%-include("par/logo.ejs") %>
+        <h1><%=mensagem_acao%></h1>
+        <p><%=mensagem_instrucao%></p>
+        <form method="POST">
+            <label for="nome"></label><br>
+            <input type="text" id="nome" name="nome" placeholder="Nome" required pattern="[a-zA-Z]*">
+            <label for="raca"></label>
+            <select id="raca" name="raca" placeholder="Raça"><br>
+                <option value="Humano">Humano</option>
+                <option value="Orc">Orc</option>
+                <option value="Goblin">Goblin</option>
+                <option value="Elfo">Elfo</option>
+            </select>
+            <input type="submit" value="OK">
+            <br><br><br>
+        </form>
+        <%-include("par/voltar.ejs")%>
+    </body>
+</html>

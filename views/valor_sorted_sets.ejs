@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%-include("par/conjuntos_head.ejs")%>
+    </head>
+    <body>
+        <%- include ("par/logo.ejs") %>
+        <h1 class="placar"><%=mensagem_placar%></h1>
+        <div class="K">
+        <h3><%=mensagem_chave%></h3>
+        </div>
+        <div class="V">
+        <h3><%=mensagem_valor%></h3>
+        </div>
+        <table>
+            <%for(let i = 0; i < 10; i++){%>
+                <tr>
+                    <td class ="TableK"><%=id[i]%></td>
+                    <td class ="TableV"><%=placar[i]%></td>
+                </tr>
+            <%}%>
+        </table>   
+    </body>
+    <%-include ("par/voltar_inicio.ejs")%>
+</html>

@@ -1,0 +1,41 @@
+ul {list-style-type: none;}
+     
+body{background: rgba(232, 148, 253, 0.788); font-family: verdana; padding: 30px;}
+
+p{font-size: 18px;  text-transform: uppercase; letter-spacing: 2px; text-align: center; font-family: Arial, Helvetica, sans-serif;}
+            
+h1{font-size: 24px;  text-transform: uppercase; letter-spacing: 2px; text-align: center;}
+            
+form{text-align: center;}
+
+#logo{display: block; position: flex; margin-left: auto; margin-right: auto;}
+
+#escolhas{width: 100%; height: auto; position: flex; flex-direction: column-reverse; flex-wrap: wrap; justify-content: space-around;}
+
+.escolha{width: 200px; height: 140px;background: linear-gradient(rgb(48, 122, 233), rgba(28, 175, 47, 0.788)); margin-left: auto; margin-right: 850px; border-radius: 20px; border-collapse: collapse}
+
+#inserir-buscar{width: 100%; height: auto; position: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around;}
+
+#inserir{width: 220px; height: 205px;background: aqua; margin-left: auto; margin-right: 850px; border-radius: 30px;}
+
+#buscar{width: 200px; height: 200px;background: green; margin-left: auto; margin-right: 860px; border-radius: 30px;}
+
+table{text-align: center; border: 3px blue solid; margin-left: auto; margin-right: auto;table-layout: fixed;width: 100%;border-collapse: collapse;}
+
+#voltar{text-align: center;}
+
+.TableK{font-family: Arial, Helvetica, sans-serif; font-size: 18px;}
+
+.TableV{font-family: Arial, Helvetica, sans-serif; font-size: 18px;}
+
+.K{position: relative; float:left}
+
+.V{position: relative; float:right}
+
+@keyframes colorchange {
+    0% { color: aqua; }
+    50% { color: yellow; }
+    100% { color: magenta; }
+}
+
+.placar{animation: colorchange 0.5s infinite;}

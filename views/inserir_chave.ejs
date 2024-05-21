@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%-include("par/key_head.ejs")%>
+    </head>
+    <body>
+        <%-include("par/logo.ejs")%>
+        <h1><%=mensagem_acao%></h1>
+        <p><%=mensagem_instrucao%></p>
+        <form method="POST">
+            <label for="chave"></label><br>
+            <input type="text" id="chave" name ="chave" placeholder="Chave" required>
+            <label for="valor"></label><br>
+            <input type="text" id="valor" name ="valor" placeholder="Valor" required>
+            <label for="ttl"></label><br>
+            <input type="submit" value="OK">
+            <%-include("par/expirar.ejs")%>
+        </form>
+        <%-include("par/voltar.ejs")%>
+    </body>
+</html>

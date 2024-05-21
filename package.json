@@ -1,0 +1,19 @@
+{
+  "type": "commonjs",
+  "name": "test",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "redis_db",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-validator": "^7.0.1",
+    "redis": "^4.6.14"
+  }
+}
